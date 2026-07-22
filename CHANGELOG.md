@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/omnixys/database-python/compare/v2.0.2...v2.0.3) (2026-07-22)
+
+
+### Bug Fixes
+
+* **publish:** replace gh release upload with uv publish to PyPI ([ec5b7a3](https://github.com/omnixys/database-python/commit/ec5b7a3271b6dd5a4c14e4f0f98ca0d5eecf4109))
+
 ## [2.0.2](https://github.com/omnixys/database-python/compare/v2.0.1...v2.0.2) (2026-07-22)
 
 
