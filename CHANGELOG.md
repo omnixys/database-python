@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/omnixys/database-python/compare/v2.0.3...v2.0.4) (2026-07-22)
+
+
+### Bug Fixes
+
+* **publish:** add uv build before uv publish ([da227ba](https://github.com/omnixys/database-python/commit/da227ba77f83def324f1cab0cc934aa57bee04fb))
+
 ## [2.0.3](https://github.com/omnixys/database-python/compare/v2.0.2...v2.0.3) (2026-07-22)
 
 
