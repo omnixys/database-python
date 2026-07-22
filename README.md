@@ -18,7 +18,7 @@ pip install omnixys-database
 ## Usage
 
 ```python
-from omnixys_database import Base, DatabaseSessionManager, Page, UtcDateTime, Uuid7
+from database import Base, DatabaseSessionManager, Page, UtcDateTime, Uuid7
 ```
 
 ## License
