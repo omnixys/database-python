@@ -2,19 +2,29 @@
 name = "omnixys-database"
 dynamic = ["version"]
 description = "Omnixys shared database package (SQLAlchemy async)"
+readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
 requires-python = ">=3.14"
+authors = [{ name = "Omnixys Team", email = "team@omnixys.com" }]
+keywords = ["omnixys", "database", "sqlalchemy", "asyncpg", "postgresql"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3.14",
+    "Typing :: Typed",
+]
 dependencies = [
-  "sqlalchemy>=2.0.51",
-  "asyncpg>=0.31.0",
-  "psycopg>=3.3.4",
-  "psycopg-binary>=3.3.4",
-  "greenlet>=3.5.1",
+    "sqlalchemy>=2.0.51",
+    "asyncpg>=0.31.0",
+    "psycopg>=3.3.4",
+    "psycopg-binary>=3.3.4",
+    "greenlet>=3.5.1",
 ]
 
-authors = [
-  {name = "Omnixys Team", email = "team@omnixys.com"},
-]
+[project.urls]
+Homepage = "https://github.com/omnixys/omnixys"
+Repository = "https://github.com/omnixys/omnixys"
 
 [build-system]
 requires = ["hatchling"]
@@ -22,6 +32,17 @@ build-backend = "hatchling.build"
 
 [tool.hatch.version]
 path = "src/omnixys_database/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/omnixys_database"]
+
+[dependency-groups]
+dev = [
+    "mypy>=2.3.0",
+    "ruff>=0.15.21",
+    "pytest>=9.1.0",
+    "pytest-asyncio>=0.26.0",
+]
 
 [tool.ruff]
 line-length = 120
@@ -32,8 +53,8 @@ select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = [
-  "ANN101", "ANN401", "S101",
-  "T20", "FBT", "D", "INP001",
+    "ANN101", "ANN401", "S101",
+    "T20", "FBT", "D", "INP001",
 ]
 
 [tool.mypy]
@@ -42,11 +63,3 @@ strict = true
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
-
-[dependency-groups]
-dev = [
-    "mypy>=2.3.0",
-    "ruff>=0.15.21",
-    "pytest>=9.1.0",
-    "pytest-asyncio>=0.26.0",
-]

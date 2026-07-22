@@ -4,7 +4,7 @@ from omnixys_database.page import Page
 from omnixys_database.session import DatabaseSessionManager
 from omnixys_database.types import UtcDateTime, Uuid7, generate_uuid7
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 __all__ = [
     "NAMING_CONVENTION",
