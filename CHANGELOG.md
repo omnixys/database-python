@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/omnixys/database-python/compare/v2.0.1...v2.0.2) (2026-07-22)
+
+
+### Bug Fixes
+
+* **release:** add @semantic-release/exec to update __version__ in __init__.py ([66af8d2](https://github.com/omnixys/database-python/commit/66af8d2b89616a8dad4ff23aff3acb24855a29ec))
+
 ## [2.0.1](https://github.com/omnixys/database-python/compare/v2.0.0...v2.0.1) (2026-07-22)
 
 
