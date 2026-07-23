@@ -4,7 +4,7 @@ from database.page import Page
 from database.session import DatabaseSessionManager
 from database.types import UtcDateTime, Uuid7, generate_uuid7
 
-__version__ = "2.0.3"
+__version__ = "3.0.0"
 
 __all__ = [
     "NAMING_CONVENTION",

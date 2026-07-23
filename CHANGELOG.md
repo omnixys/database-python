@@ -1,3 +1,10 @@
+# [3.0.0](https://github.com/omnixys/database-python/compare/v2.0.4...v3.0.0) (2026-07-23)
+
+
+### Bug Fixes
+
+* **ci:** comment out PyPI publish job ([a490eb0](https://github.com/omnixys/database-python/commit/a490eb06e1682434ddeb9e5b6115599e0fa572b3))
+
 ## [2.0.4](https://github.com/omnixys/database-python/compare/v2.0.3...v2.0.4) (2026-07-22)
 
 
