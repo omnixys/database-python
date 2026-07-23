@@ -1,8 +1,8 @@
 # ruff: noqa: D104
-from omnixys_database.base import NAMING_CONVENTION, Base
-from omnixys_database.page import Page
-from omnixys_database.session import DatabaseSessionManager
-from omnixys_database.types import UtcDateTime, Uuid7, generate_uuid7
+from database.base import NAMING_CONVENTION, Base
+from database.page import Page
+from database.session import DatabaseSessionManager
+from database.types import UtcDateTime, Uuid7, generate_uuid7
 
 __version__ = "2.0.4"
 
