@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/omnixys/database-python/compare/v3.0.0...v3.0.1) (2026-08-22)
+
+
+### Bug Fixes
+
+* **dir:** remove target dir ([e7eef84](https://github.com/omnixys/database-python/commit/e7eef84cddc1af624dee21e32b605a44216388fd))
+
 # [3.0.0](https://github.com/omnixys/database-python/compare/v2.0.4...v3.0.0) (2026-07-23)
 
 
