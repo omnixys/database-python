@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-# ruff: noqa: D100, D101
 from sqlalchemy import MetaData
 from sqlalchemy.orm import DeclarativeBase
 

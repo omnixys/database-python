@@ -1,4 +1,3 @@
-# ruff: noqa: D104
 from database.base import NAMING_CONVENTION, Base
 from database.page import Page
 from database.session import DatabaseSessionManager

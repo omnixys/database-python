@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-# ruff: noqa: D100, D101, D105
 from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, TypeVar
 

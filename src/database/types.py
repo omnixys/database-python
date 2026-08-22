@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-# ruff: noqa: D100, D101, D102, D103, ANN401, ARG002
 import uuid
 from datetime import datetime
 from typing import Any

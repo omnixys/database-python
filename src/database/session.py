@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-# ruff: noqa: D100, D101, D102, D105, D107
 from contextlib import asynccontextmanager
 from typing import TYPE_CHECKING, Self
 
@@ -26,14 +25,15 @@ class DatabaseSessionManager:
         max_overflow: int = 20,
         use_pool: bool = True,
     ) -> None:
-        poolclass = AsyncAdaptedQueuePool if use_pool else NullPool
+        pool_options: dict[str, object] = {"poolclass": AsyncAdaptedQueuePool if use_pool else NullPool}
+        if use_pool:
+            pool_options["pool_size"] = pool_size
+            pool_options["max_overflow"] = max_overflow
         self._engine: AsyncEngine = create_async_engine(
             url,
             echo=echo,
-            pool_size=pool_size,
-            max_overflow=max_overflow,
             pool_pre_ping=True,
-            poolclass=poolclass,
+            **pool_options,
         )
         self._session_factory: async_sessionmaker[AsyncSession] = async_sessionmaker(
             bind=self._engine,
