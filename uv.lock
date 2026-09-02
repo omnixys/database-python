@@ -213,6 +213,7 @@ wheels = [
 
 [[package]]
 name = "omnixys-database"
+version = "3.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "asyncpg" },

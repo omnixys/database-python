@@ -3,7 +3,6 @@ from database.page import Page
 from database.session import DatabaseSessionManager
 from database.types import UtcDateTime, Uuid7, generate_uuid7
 
-
 __all__ = [
     "NAMING_CONVENTION",
     "Base",
