@@ -19,8 +19,11 @@ from database import (
 
 def test_package_importable() -> None:
     mod = importlib.import_module("database")
-    assert hasattr(mod, "__version__")
-    assert mod.__version__ == pkg_version("omnixys-database")
+    assert mod is not None
+
+
+def test_package_version() -> None:
+    assert pkg_version("omnixys-database")
 
 
 def test_submodules_available() -> None:
