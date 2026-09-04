@@ -1,6 +1,6 @@
 [project]
 name = "omnixys-database"
-version = "3.0.2"
+version = "3.0.3"
 description = "Omnixys shared database package (SQLAlchemy async)"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }

@@ -3,6 +3,16 @@
 All notable changes in this project will be documented in this file.
 
 
+## [3.0.3](https://github.com/omnixys/database-python/compare/v3.0.2...v3.0.3) (2026-09-04)
+
+### Deps
+
+* **Deps:** update omnixys deps ([](https://github.com/omnixys/database-python/commit/d234d5312bb81da6528f79f5ddc405452b62de21))
+
+### Release
+
+* **Release:** take 2 ([](https://github.com/omnixys/database-python/commit/630add6d38692c691f218ca9263780dda31bc80b))
+
 ## [3.0.2](https://github.com/omnixys/database-python/compare/v3.0.1...v3.0.2) (2026-09-02)
 
 ### Ci
