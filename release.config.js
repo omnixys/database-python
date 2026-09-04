@@ -73,7 +73,7 @@ export default {
     ],
 
     /**
-     * Generate structured release notes
+     * Generate structured release notes 
      */
     [
       "@semantic-release/release-notes-generator",
